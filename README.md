@@ -5,8 +5,9 @@
 本控制器除了控制普通焊台以外，只需通过稍作修改，还可以控制其他非焊台的自动化设备
 
 ## 硬件
+[LCEDA/EasyEDA]https://oshwhub.com/sndnvaps/opent12-jing-jian-ban "I2C 4P 0.96屏幕"
 
-[LCEDA/EasyEDA]https://oshwhub.com/createskyblue/opent12-jing-jian-ban  
+[LCEDA/EasyEDA]https://oshwhub.com/createskyblue/opent12-jing-jian-ban  "SPI 7P 0.96屏幕"
 [核心驱动电路参考]https://oshwhub.com/47415Y/gong-cheng
 
 **注意：电路板未经验证**  
@@ -55,13 +56,11 @@ https://www.bilibili.com/video/BV1s64y1v7mY/
 目前硬件还没有设计好，如果想自己制作控制器可以参考下表制作硬件
 
 **使用I2C（默认）**
-| I2C模式 | PIN | SPI模式 | PIN |
-| :-----: | :----: | :-----: | :----: |
-| 屏幕SCL | 22 | 屏幕SCK  | 18 |
-| 屏幕SDA | 21 |屏幕MOSI | 23 |
-|||屏幕DC   | 13 |
-|||屏幕RST  | 15 |
-|||屏幕CS   | GND (未来有变动)|
+| I2C模式 | PIN |
+| :-----: | :----: |
+| 屏幕SCL | 13 |
+| 屏幕SDA | 15 |
+
 
 **其他引脚**
 | 名称 | PIN |
