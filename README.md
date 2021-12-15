@@ -95,6 +95,13 @@ https://www.bilibili.com/video/BV1s64y1v7mY/
 ## 编译安装
 安装ArduinoIDE
 
+### 本项目依赖的 Ardunio 库
+  1. GeekFactory_Shell 1.2.0 
+  2. OneButton 2.0.2
+  3. PID 1.2.0
+  4. QRCode 0.0.1
+  5. u8g2  2.31.2
+
 ### 安装ESP32开发板
 ArduinoIDE-文件-首选项-附加开发板管理网址->添加:
 

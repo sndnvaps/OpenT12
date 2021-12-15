@@ -1,3 +1,5 @@
+#include <qrcode.h>
+
 #ifndef OPENT12_H
 #define OPENT12_H
 #include <math.h>
@@ -7,6 +9,7 @@
 #include <U8g2lib.h>
 #include <Ticker.h>
 #include <OneButton.h>
+#include <qrcode.h>
 #include "BluetoothSerial.h"
 #include "Type.h"
 #include "serial_putc.h"
@@ -22,7 +25,6 @@
 #include "Bezier.h"
 #include "TipManager.h"
 #include "FilesSystem.h"
-#include "qrcode.h"
 #include "BLE.h"
 #include "Bitmap.h"
 
@@ -111,8 +113,8 @@ extern hw_timer_t* SoundTimer;
 
 extern BluetoothSerial SerialBT;
 extern OneButton RButton;
-// extern U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp;
-extern U8G2_SSD1306_128X64_NONAME_F_4W_HW_SPI Disp;
+extern U8G2_SSD1306_128X64_NONAME_F_SW_I2C Disp;
+//extern U8G2_SSD1306_128X64_NONAME_F_4W_HW_SPI Disp;
 extern PID MyPID;
 extern KFP KFP_Temp;
 
