@@ -9,7 +9,7 @@
 #include <U8g2lib.h>
 #include <Ticker.h>
 #include <OneButton.h>
-#include <qrcode.h>
+#include "qrcode.h"
 #include "BluetoothSerial.h"
 #include "Type.h"
 #include "serial_putc.h"
