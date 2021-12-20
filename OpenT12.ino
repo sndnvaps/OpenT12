@@ -16,7 +16,11 @@ BluetoothSerial SerialBT;
 #endif
 
 OneButton RButton(BUTTON_PIN, true);
-U8G2_SSD1306_128X64_NONAME_F_SW_I2C Disp(U8G2_R0,/* clock=*/ 13, /* data=*/ 15, /* reset=*/ U8X8_PIN_NONE); //(rotation, clock, data [, reset])
+/*
+ * 此处因为不是代表esp32的 IO22,IO23接口，所以需要用SW模式->即软件开关
+ * 因为屏幕方向倒转，所以需要使用U8G2_R2模式->即翻转180度
+ */
+U8G2_SSD1306_128X64_NONAME_F_SW_I2C Disp(U8G2_R2,/* clock=*/ 13, /* data=*/ 15, /* reset=*/ U8X8_PIN_NONE); //(rotation, clock, data [, reset])
 //U8G2_SSD1306_128X64_NONAME_F_HW_I2C Disp(U8G2_R0,/* clock=*/ 13, /* data=*/ 15, /* reset=*/ U8X8_PIN_NONE); //(rotation, clock, data [, reset])
 //U8G2_SSD1306_128X64_NONAME_F_4W_SW_SPI Disp(U8G2_R0, /* clock=*/ 13, /* data=*/ 11, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 //U8G2_SSD1306_128X64_NONAME_F_4W_HW_SPI Disp(U8G2_R0, /* cs=*/ 5, /* dc=*/ 13, /* reset=*/ 15);
