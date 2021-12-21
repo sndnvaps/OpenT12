@@ -1,11 +1,11 @@
-# 朱雀 是基于ESP32的开源焊台控制器
+# 朱雀 是基于ESP32-WROOM-32U的开源焊台控制器
 
 ![](img/Logo.png)
 
 本控制器除了控制普通焊台以外，只需通过稍作修改，还可以控制其他非焊台的自动化设备
 
 ## 硬件
-[LCEDA/EasyEDA]https://oshwhub.com/sndnvaps/opent12-jing-jian-ban "I2C 4P 0.96屏幕"
+[LCEDA/EasyEDA]https://oshwhub.com/sndnvaps/opent12-jing-jian-ban_copy "I2C 4P 0.96屏幕"
 
 [LCEDA/EasyEDA]https://oshwhub.com/createskyblue/opent12-jing-jian-ban  "SPI 7P 0.96屏幕"
 [核心驱动电路参考]https://oshwhub.com/47415Y/gong-cheng
